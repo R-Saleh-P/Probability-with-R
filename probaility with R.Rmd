@@ -1,0 +1,32 @@
+---
+title: "Probability"
+author: "Saleh Din"
+date: "2022/02/15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Probability in R
+# 1.1 sets
+$A=\{a,b,c,d,e,f,g,h\} ,$
+$B=\{d,e,f,g,h,i,j\}$ then 
+$A\cap B={d,e,f,g,h}$ ,
+$A\cup B=\{a,b,c,d,f,g,h,i,j\}$
+
+
+```{r cars}
+A<-letters[1:8]
+B<-letters[4:10]
+intersect(A,B)
+union(A,B)
+```
+# binomial distribution 
+```{r}
+x<-rbinom(1000,10,0.5)
+plot(x)
+
+```
+
